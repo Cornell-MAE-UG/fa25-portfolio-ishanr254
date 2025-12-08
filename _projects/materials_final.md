@@ -28,7 +28,7 @@ The goal of this project was to design a non-ratcheting torque wrench capable of
 - Fatigue/Endurance limit **≈ 517 MPa** *(= 75 ksi)*
 - Source / datasheet: **Ansys Granta**
 
-Add writeup here
+Ti-6Al-4V (annealed) was selected for its high specific strength and corrosion resistance. With E = 119 GPa and ν = 0.31, it provides sufficient stiffness and produces measurable surface strain without approaching the allowable σy = 910 MPa under the applied loads. Some trade-offs, including the higher cost and lower modulus than steel, are acceptable given the goal of this project was to maximize the sensitivity of the design.
 
 ---
 
@@ -45,7 +45,6 @@ Add writeup here
 <div class="image-block-full">
   <img src="{{ site.baseurl }}/assets/images/materials-final/strain-sgdir.png" alt="Normal strain contours in gauge direction" class="project-image" style="width:100%;">
 </div>
-Call out the gauge pads and the local ε values where the gauges will be bonded.
 
 ---
 
@@ -53,43 +52,32 @@ Call out the gauge pads and the local ε values where the gauges will be bonded.
 <div class="image-block-full">
   <img src="{{ site.baseurl }}/assets/images/materials-final/stress-maxP.png" alt="Maximum principal stress contour" class="project-image" style="width:100%;">
 </div>
-Note hotspot location, value, and margin vs. σᵧ.
 
 ---
 
-### 6) FEM Results Summary
 
-#### 6.1 Max Normal Stress (σ_max)
-- **Value:** **[fill] MPa** at **[location]**
+### 7) Max Normal Stress
+- **Value:** **1.457 x 10^5 psi**
 
 <div class="image-block-full">
   <img src="{{ site.baseurl }}/assets/images/materials-final/stress-max.png"
        alt="Max normal stress contour from FEM">
 </div>
-*Notes:* [hotspot, K_t reasoning, mesh independence, margin vs. σ_y].
 
 ---
 
-#### 6.2 Deflection at Load Point (δ)
-- **Value:** **[fill] mm** at **[node/feature]**
+### 8) Deflection at Load Point
+- **Value: 0.8275 in**
 
 <div class="image-block-full">
   <img src="{{ site.baseurl }}/assets/images/materials-final/deflection-loadpoint.png"
        alt="Deflection field and load-point displacement">
 </div>
-*Notes:* [stiffness check vs. analytical beam calc, linearity].
 
 ---
-<!--
-#### 6.3 Strain at Gauge
-- **Value:** **1599.3 µε** at **[gauge location ref]**
 
-<div class="image-block-full">
-  <img src="{{ site.baseurl }}/assets/images/materials-final/strainGauge.png"
-       alt="Strain at Gauge 1 location (gauge-axis component)">
-</div> -->
 
-#### 6.3 Strain at Gauge
+### 9) Strain at Gauge
 - **Value:** **1599.3 µε** at the set gauge location
 
 <div style="display:flex; gap:1rem; clear:both; width:100%; margin:1rem 0 2rem;">
@@ -114,22 +102,16 @@ Note hotspot location, value, and margin vs. σᵧ.
 
 ---
 
-### 7) Torque-Wrench Sensitivity (mV/V)
+### 10) Torque-Wrench Sensitivity
 - Measured strain from the strain gauge in the model **ε = 1599.3 µε**
-- Gauge factor: **GF = 2**
+- Gauge factor: **K = 2**
 - Bridge setup used:  **half**
 - **Sensitivity: 1.5993 mV/V** - meets the required criteria
 
 
 ---
 
-### 8) Strain Gauge Selection (type & dimensions)
-- Model / Part #: **[fill]** (link)
-- Resistance: **[120 Ω / 350 Ω]** — Gauge factor: **[fill]**
-- Grid **L × W:** **[fill] mm × [fill] mm**
-- Carrier/backing: **[fill]**; Temperature range: **[fill]**
-- **Bonding area available on part:** **[fill] mm × [fill] mm** (fits with margin)
-
-<div class="image-wrapper-large">
-  <img src="{{ site.baseurl }}/assets/images/materials-final/gauge-footprint.png" alt="Gauge footprint overlay" class="project-image" style="width:100%;">
-</div>
+### 11) Strain Gauge Selection
+- Gauge Type: **Bonded Foil Strain Gauge**
+- Dimensions: **~ 7mm x 4mm**
+- Bonding area on the part is larger than this, providing enough room
