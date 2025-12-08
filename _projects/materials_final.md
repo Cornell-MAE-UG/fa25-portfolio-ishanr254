@@ -26,7 +26,7 @@ The goal of this project was to design a non-ratcheting torque wrench capable of
 - σᵧ = **910 MPa** *(= 132 ksi)*,
 - Fracture toughness **K₁C ≈ 107 MPa√m** *(= 97.3 ksi√in)*
 - Fatigue/Endurance limit **≈ 517 MPa** *(= 75 ksi)*
-- Source / datasheet: **Ansys Granta**
+- Source: **Ansys Granta**
 
 Ti-6Al-4V (annealed) was selected for its high specific strength and corrosion resistance. With E = 119 GPa and ν = 0.31, it provides sufficient stiffness and produces measurable surface strain without approaching the allowable σy = 910 MPa under the applied loads. Some trade-offs, including the higher cost and lower modulus than steel, are acceptable given the goal of this project was to maximize the sensitivity of the design.
 
