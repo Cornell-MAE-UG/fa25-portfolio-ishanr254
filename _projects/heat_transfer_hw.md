@@ -1,18 +1,19 @@
 ---
-layout: project
+layout: report
 title: "MAE 3240 - Composite Wall Heat Conduction (Problem Set)"
 date: 2026-03-10
 icon: /assets/images/Cornell_Logo.png
 image: assets/images/Cornell_Logo.png
+file: /assets/files/htUpload.pdf
+type: pdf
 ---
 
 ### Reflection
 
-This problem set assignment from MAE 3240 (Heat Transfer) was one of the most valuable exercises in building my physical intuition for one-dimensional conduction through composite systems. The problem centered on a two-wall system — Wall A with uniform volumetric heat generation and an insulated left boundary, and Wall B acting as a purely conductive layer between Wall A and a convective coolant. By working through the energy balance and applying Fourier's Law in each region, I had to carefully reason about what the temperature measurements at the two surfaces of Wall A actually tell us: the interface temperature T_i and the insulated-wall temperature T_w together encode both the heat flux leaving Wall A and the shape of the parabolic temperature profile driven by heat generation. Finding the right surface temperature T_s for Wall B, the volumetric generation rate q̇, and the thermal conductivity k_A all followed from applying the correct boundary conditions in the right sequence — a process that made the connection between the governing equations and measurable physical quantities very concrete.
+This MAE 3240 heat transfer problem set was one of the most useful assignments I have done so far because it helped me build real intuition for one-dimensional conduction in a composite wall system. The setup involved two walls: Wall A had uniform volumetric heat generation and an insulated left boundary, while Wall B acted as a conductive layer between Wall A and a convective coolant. What made the problem especially valuable was that it forced me to think carefully about what the given temperatures actually meant physically, not just mathematically. The interface temperature Ti and the insulated-side wall temperature Tw were not just numbers to plug into equations. Together, they gave information about the heat flux leaving Wall A and the shape of the temperature distribution caused by internal heat generation. Once I understood that, solving for the surface temperature Ts of Wall B, the volumetric heat generation rate q-dot, and the conductivity kA felt much more logical and systematic.
 
-What I found most useful about this assignment was how it reinforced the idea that every boundary condition tells a physical story. The insulated left wall means zero heat flux there, which fixes the symmetry of the temperature profile in Wall A and determines the direction all generated heat must flow. The no-contact-resistance condition at the A–B interface means the flux and temperature are continuous, linking the two sub-problems together into one coherent system. These kinds of reasoning steps — rather than just plugging into formulas — are directly applicable to real engineering problems involving thermal management of layered structures, such as circuit boards, heat exchangers, or insulated wall panels. This assignment gave me practice thinking through those steps systematically, which I expect to carry forward throughout the course and into future design work.
+What I found most useful about this assignment was how clearly it showed that boundary conditions are really physical statements. The insulated boundary means zero heat flux, so all of the heat generated in Wall A has to leave through the right side. The no-contact-resistance condition at the interface means temperature and heat flux must be continuous across the two walls, which is what ties the full problem together. That was probably the biggest takeaway for me: the solution only makes sense if you understand what each condition is saying physically. That kind of reasoning feels much more transferable to real engineering problems than just memorizing formulas, especially in systems involving layered materials and thermal management. Overall, this assignment helped me get more comfortable connecting the governing equations, the boundary conditions, and the physical picture of the problem.
 
 ---
 
-### Assignment PDF
-<a href="{{ site.baseurl }}/assets/files/htUpload.pdf" target="_blank">📄 View Completed Assignment (PDF)</a>
+<a href="{{ '/assets/files/htUpload.pdf' | relative_url }}" download>⬇ Download Assignment PDF</a>
