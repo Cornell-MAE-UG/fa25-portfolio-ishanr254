@@ -15,9 +15,4 @@ What I found most useful about this assignment was how it reinforced the idea th
 ---
 
 ### Assignment PDF
-
-<!-- Upload your completed homework PDF here and replace the placeholder below -->
->** — Add your completed Problem Set PDF to `assets/files/` and link it here.
-
-
 <a href="{{ site.baseurl }}/assets/files/htUpload.pdf" target="_blank">📄 View Completed Assignment (PDF)</a>
